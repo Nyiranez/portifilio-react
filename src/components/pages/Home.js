@@ -8,10 +8,10 @@ import { Text } from './text';
 export const Home = () => {
   const [text, setText]= useState(false);
   return (
-    <div className='bg-zinc-700  h-screen pt-32 flex flex-row justify-around pb-16 t-24 '>
+    <div className='bg-zinc-700  h-screen md:pt-32 flex md:flex-row flex-col space-y-4 md:justify-around pb-16 t-24 '>
       <div className='space-y-12 '>
         <h1 className='text-gray-400'>Hello I'm</h1>
-        <h2 className="text-8xl font-bold text-red-800">Louise</h2>
+        <h2 className="md:text-8xl opacity:0  md:font-bold md: text-red-800">Louise</h2>
         <h2 className="text-2xl">Creative <span className="text-4xl font-bold animate-pulse m-auto">Front-End Developer</span></h2>
         
           <button className=' bg-red-600 px-6 py-4 hover:bg-white rounded-full hover:border-2 hover: border-black' onClick={()=>{

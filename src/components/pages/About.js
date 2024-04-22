@@ -5,7 +5,7 @@ import React from 'react'
 export const About = () => {
   return (
     <div>
-      <div className='flex flex-row justify-around items-center mt-16 h-screen'>
+      <div className='flex md:flex-row flex-col items-center md:justify-around md:items-center md:mt-16 h-screen'>
         <div className='bg-black'>
           <img src={profiles} s alt="" className='w-80 h-96'></img>
         </div>

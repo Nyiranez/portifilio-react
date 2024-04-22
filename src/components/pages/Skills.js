@@ -6,7 +6,7 @@ export const Skills = () => {
     <div className='h-screen bg-zinc-700 pt-8 '>
       <div >
         <div className='flex flex-col items-center'><img src={Open} alt="" className='animate-bounce'></img></div>
-        <div className='flex flex-row justify-around'>
+        <div className='flex md:flex-row md:justify-around flex-col items-center space-y-8 p-4'>
           <div>
             <p className='text-white text-2xl'>My Skills</p>
             <p className='text-white text-6xl'>You Can Imagine</p>

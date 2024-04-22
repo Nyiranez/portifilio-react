@@ -13,7 +13,7 @@ export const Contact = () => {
           Phone:<span className="text-red-600 font-bold ml-2 mr-2">+250786170670</span>
           Email:<span className="text-red-600 font-bold ml-2">nyiranezalouise93@gmail.com</span></p>
       </div>
-      <div className="flex flex-row mt-16 justify-around">
+      <div className="flex md:flex-row md:mt-16 flex-col space-y-8 items-center mt-8  md:justify-around">
         <div className="w-96 h-96 animate-pulse bg-slate-200 flex flex-col items-center justify-center px-4 shadow-[5px_5px_0px_0px_rgba(109,40,217)]" >
           <p
             class="bg-slate-600 rounded-full w-10 h-10 flex flex-col items-center justify-center text-white text-xl animate-ping">
