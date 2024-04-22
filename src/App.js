@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/pages/Home';
 import { Contact } from './components/pages/contact'
 import { Project } from './components/pages/Project'
@@ -19,12 +19,8 @@ function App() {
     <div className="App">
       <div className="container" >
         <Header />
-        <Home/>
-        <About/>
-        <Skills/>
-        <Project/>
-        <Contact/>
-        <Routes>
+       
+        {/* <Routes>
 
           <Route path="/" element={<Home />} />
         
@@ -32,8 +28,13 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/About" element={<About />} />
-          {/* <Route path="*" element={<Errors />} /> */}
-        </Routes>
+          <Route path="*" element={<Errors />} />
+        </Routes> */}
+        <Home/>
+        <About/>
+        <Skills/>
+        <Project/>
+        <Contact/>
       </div>
 
       <Footer />
