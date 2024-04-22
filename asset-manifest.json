@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ed61fca.css",
+    "main.js": "/static/js/main.bbb9a070.js",
+    "static/js/453.06948e4e.chunk.js": "/static/js/453.06948e4e.chunk.js",
+    "static/media/IMG_8265.HEIC": "/static/media/IMG_8265.b614a95716af868c87b5.HEIC",
+    "static/media/IMG_8092.HEIC": "/static/media/IMG_8092.4f7a19f1dce175b252ef.HEIC",
+    "static/media/localStorage.PNG": "/static/media/localStorage.8eec28a8ada2e0a3db8a.PNG",
+    "static/media/group-computer-neatly-placed-lab-260nw-605958425.webp": "/static/media/group-computer-neatly-placed-lab-260nw-605958425.d147f95ddccf5944b058.webp",
+    "static/media/paper-rock-scissor-game.PNG": "/static/media/paper-rock-scissor-game.45c64702974e9f88c589.PNG",
+    "static/media/Captureopentag1.PNG": "/static/media/Captureopentag1.4871d414257e3ce0a806.PNG",
+    "static/media/heart-icon-512x441-zviestnn.png": "/static/media/heart-icon-512x441-zviestnn.39b7a0feec0781b658f7.png",
+    "static/media/diceog.PNG": "/static/media/diceog.d513dce33e4bb9a357a6.PNG",
+    "static/media/Captureclose1.PNG": "/static/media/Captureclose1.21604a027e1f6d1cacdf.PNG",
+    "static/media/Capture.PNG": "/static/media/Capture.71a526c83e694d05b56c.PNG",
+    "index.html": "/index.html",
+    "main.4ed61fca.css.map": "/static/css/main.4ed61fca.css.map",
+    "main.bbb9a070.js.map": "/static/js/main.bbb9a070.js.map",
+    "453.06948e4e.chunk.js.map": "/static/js/453.06948e4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ed61fca.css",
+    "static/js/main.bbb9a070.js"
+  ]
+}
