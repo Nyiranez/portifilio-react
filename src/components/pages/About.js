@@ -21,7 +21,7 @@ export const About = () => {
         </div>
       </div>
 <div className='flex flex-col items-center justify-center mb-16'>
-  <button className='bg-red-600 px-4 py-2 rounded'>Download  <span className='text-white'>CV <span><GoArrowDown /></span></span></button>
+  <a href="https://docs.google.com/document/d/152VBc-XQPmnGwxaanem3JWBuUoVG1Mmh/edit?usp=sharing&ouid=110965948465654888248&rtpof=true&sd=true" className='bg-red-600 px-4 py-2 rounded'>Download  <span className='text-white'>CV <span><GoArrowDown /></span></span></a>
 </div>
     </div>
   )
