@@ -50,7 +50,7 @@ export const About = () => {
           </p>
           <div className=" px-8 py-4 rounded-full text-purple-700 border border-purple-700 hover:bg-purple-600 hover:text-white mt-4">
             {" "}
-            <a href="https://docs.google.com/document/d/152VBc-XQPmnGwxaanem3JWBuUoVG1Mmh/edit?usp=sharing&ouid=110965948465654888248&rtpof=true&sd=true">
+            <a href="https://docs.google.com/document/d/16h6EZmAXpRv3GitkkTjhz7XNI9rqrMDCxDoUQV7eAtM/edit?tab=t.0">
               <div className="flex flex-row justify-center items-center">
                 {" "}
                 <p>Download CV</p>

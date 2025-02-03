@@ -81,7 +81,9 @@ export const Home = () => {
         <div className="flex flex-row items-center justify-center space-x-4 mb-16 ">
           <div className="flex flex-row space-x-4">
             <div className="rounded-full text-purple-700 border border-purple-700 h-10 w-10 flex flex-col justify-center items-center hover:bg-purple-600 hover:text-white">
-              <RiLinkedinFill className="w-6 h-6" />
+              <a href="https://www.linkedin.com/in/nyiraneza-mlouise/">
+                <RiLinkedinFill className="w-6 h-6" />
+              </a>
             </div>
             <div className="rounded-full text-purple-700 border border-purple-700 h-10 w-10 flex flex-col justify-center items-center hover:bg-purple-600 hover:text-white">
               <RiFacebookFill className="w-6 h-6" />
