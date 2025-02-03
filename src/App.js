@@ -1,44 +1,39 @@
-// import { Routes, Route } from 'react-router-dom';
-import { Home } from './components/pages/Home';
-import { Contact } from './components/pages/contact'
-import { Project } from './components/pages/Project'
-import { Skills } from './components/pages/Skills'
-import { About } from './components/pages/About'
-import { Header } from './components/Header';
-// import { Errors } from './components/errors';
-import { Footer } from './components/pages/footer';
-import './App.css';
-
-
-
-
-
+import { Header } from "./components/Header";
+import { Footer } from "./components/pages/footer";
+import "./App.css";
+import ContextUser from "./components/pages/context";
+import { Home } from "./components/pages/Home";
+import { Contact } from "./components/pages/contact";
+import { Project } from "./components/pages/Project";
+import { Skills } from "./components/pages/Skills";
+import { About } from "./components/pages/About";
 
 function App() {
   return (
     <div className="App">
-      <div className="container" >
-        <Header />
-       
-        {/* <Routes>
+      <ContextUser>
+        <div className="container">
+          <Header /> {/* Header with Navigation links */}
+          {/* Sections for each page */}
+          <div id="home">
+            <Home />
+          </div>
+          <div id="about">
+            <About />
+          </div>
+          <div id="skills">
+            <Skills />
+          </div>
+          <div id="project">
+            <Project />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
+        </div>
 
-          <Route path="/" element={<Home />} />
-        
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/About" element={<About />} />
-          <Route path="*" element={<Errors />} />
-        </Routes> */}
-        <Home/>
-        <About/>
-        <Skills/>
-        <Project/>
-        <Contact/>
-      </div>
-
-      <Footer />
-
+        <Footer />
+      </ContextUser>
     </div>
   );
 }

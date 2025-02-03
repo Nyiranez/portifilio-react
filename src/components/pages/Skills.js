@@ -1,55 +1,66 @@
-import React from 'react'
-import Open from '../images/Captureopentag1.PNG'
-import Close from '../images/Captureclose1.PNG'
+import React from "react";
+import Card from "./cardSkills";
+import { FaFigma } from "react-icons/fa6";
+import { GrHtml5 } from "react-icons/gr";
+import { FaCss3 } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { GrReactjs } from "react-icons/gr";
+import { RiFlutterFill } from "react-icons/ri";
+import { useContext } from "react";
+import { AppContext } from "./context";
+
+
 export const Skills = () => {
+ const {mode}= useContext(AppContext)
   return (
-    <div className='h-screen bg-zinc-700 pt-8 '>
-      <div >
-        <div className='flex flex-col items-center'><img src={Open} alt="" className='animate-bounce'></img></div>
-        <div className='flex md:flex-row md:justify-around flex-col items-center space-y-8 p-4'>
-          <div>
-            <p className='text-white text-2xl'>My Skills</p>
-            <p className='text-white text-6xl'>You Can Imagine</p>
-            <p className='text-white text-6xl'>I Can Do</p>
-            <p className='text-white'>I am working on a professional, visually sophisticated and</p>
-            <p className='text-white'>technologically proficient, responsive and multi-functional creative</p>
-            <p className='text-white'>personal resume portfolio template</p>
-          </div>
-          <div className='bg-red-950 shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] px-16 py-8 space-y-4 border-2 border-black transform transition-all hover:translate-x-8'>
-            <div>
-              <p className='text-white'>HTML (Hyper Text Markup Language)</p>
-              <div class="bg-white w-full rounded-full">
-                <div className="w-11/12 bg-red-400 text-center">95%</div>
-              </div>
-            </div>
-            <div>
-              <p className='text-white'>CSS (Cascading Style Sheet)</p>
-              <div class="bg-white w-full rounded-full">
-                <div className="w-10/12 bg-red-400 text-center">93%</div>
-              </div>
-            </div>
-            <div>
-              <p className='text-white'> JAVASCRIPT</p>
-              <div class="bg-white w-full rounded-full">
-                <div className="w-9/12 bg-red-400 text-center">80%</div>
-              </div>
-            </div>
-            <div>
-              <p className='text-white'>REACT</p>
-              <div class="bg-white w-full rounded-full">
-                <div className="w-10/12 bg-red-400 text-center">93%</div>
-              </div>
-            </div>
-            <div>
-              <p className='text-white'>GITHUB</p>
-              <div class="bg-white w-full rounded-full">
-                <div className="w-8/12 bg-red-400 text-center">75%</div>
-              </div>
-            </div>
-          </div>
+    <div
+      className={`h - auto py-16 bg-gradient-to-r ${
+        mode
+          ? "bg-gradient-to-r from-[#0F0715] to-[#281744]"
+          : "bg-gradient-to-r from-yellow-600 to-pink-600"
+      } flex flex-col items-center`}
+    >
+      <div>
+        {" "}
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-700 to-white bg-clip-text text-transparent w-full">
+          My Skills
+        </h1>
+      </div>
+      <div>
+        {" "}
+        <p className="text-white mt-12">
+          We put your ideas and thus your wishes in the form of a unique web
+          project that
+        </p>
+      </div>
+      <div>
+        {" "}
+        <p className="text-white">inspires you and you customers.</p>
+      </div>
+      <div className=" flex flex-row space-x-4  mt-8">
+        <div>
+          <Card icon={<FaFigma />} text="85%" title="Figma" />
         </div>
-        <div className='flex flex-col items-center mt-24'><img src={Close} alt="" className='animate-bounce'></img> </div>
+        <div>
+          <Card icon={<GrHtml5 />} text="98%" title="html" />
+        </div>
+        <div>
+          <Card icon={<FaCss3 />} text="95%" title="css" />
+        </div>
+        <div>
+          <Card icon={<SiTailwindcss />} text="97%" title="Tailwind" />
+        </div>
+        <div>
+          <Card icon={<IoLogoJavascript />} text="90%" title="Javascript" />
+        </div>
+        <div>
+          <Card icon={<GrReactjs />} text="96%" title="React" />
+        </div>
+        <div>
+          <Card icon={<RiFlutterFill />} text="80%" title="Flutter" />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
