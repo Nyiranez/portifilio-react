@@ -82,14 +82,14 @@ export const Contact = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-row space-x-4 mt-4">
             <div className="w-1/2">
-              <label className="text-white">first Name</label>
+              <label className="text-white">First Name</label>
               <input
                 type="text"
                 name="firstName"
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full h-12 border border-slate-800 pl-2 mt-4 rounded-md bg-black text-white"
+                className="w-full h-12 border border-slate-800 pl-2  rounded-md bg-black text-white"
               ></input>
               {errors.firstName && (
                 <p className="mt-1 text-sm text-red-500">{errors.firstName}</p>
@@ -104,7 +104,7 @@ export const Contact = () => {
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full h-12 border border-slate-800 pl-2 mt-4 rounded-md bg-black text-white"
+                className="w-full h-12 border border-slate-800 pl-2 rounded-md bg-black text-white"
               ></input>
               {errors.lastName && (
                 <p className="mt-1 text-sm text-red-500">{errors.lastName}</p>
@@ -128,7 +128,7 @@ export const Contact = () => {
               )}
             </div>
             <div className="w-1/2">
-              <label className="text-white">phone Number</label>
+              <label className="text-white">Phone Number</label>
               <input
                 type="text"
                 name="phoneNumber"
