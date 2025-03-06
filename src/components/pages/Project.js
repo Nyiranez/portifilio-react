@@ -54,7 +54,7 @@ export const Project = () => {
       className={`${
         mode
           ? "bg-gradient-to-r from-[#0F0715] to-[#281744]"
-          : "bg-gradient-to-r from-yellow-600 to-pink-600"
+          : "bg-white"
       } h-screen`}
     >
       <div className="flex flex-col justify-center items-center space-y-4">

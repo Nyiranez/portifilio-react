@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <div
       className={`${
-        mode ? "bg-black" : "bg-gradient-to-r from-yellow-600 to-pink-600"
+        mode ? "bg-black" : "bg-white"
       } flex md:items-center flex-col`}
     >
       <h1

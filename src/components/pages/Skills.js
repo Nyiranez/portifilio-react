@@ -18,7 +18,7 @@ export const Skills = () => {
       className={`h - auto py-16 bg-gradient-to-r ${
         mode
           ? "bg-gradient-to-r from-[#0F0715] to-[#281744]"
-          : "bg-gradient-to-r from-yellow-600 to-pink-600"
+          : "bg-white"
       } flex flex-col items-center`}
     >
       <div>

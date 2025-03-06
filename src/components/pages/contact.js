@@ -54,7 +54,7 @@ export const Contact = () => {
       e.preventDefault();
       if (validateForm()) {
         
-        alert("Message submitted:");
+        alert("Message submitted");
         setFormData({
           firstName: "",
           lastName: "",
@@ -68,7 +68,7 @@ export const Contact = () => {
   return (
     <div
       className={`${
-        mode ? "bg-black" : "bg-gradient-to-r from-yellow-600 to-pink-600"
+        mode ? "bg-black" : "bg-white"
       } pb-4 h-screen pt-4 pl-44 flex flex-row space-x-8`}
     >
       <div className="w-1/2 h-auto  bg-[#140C1C] flex flex-col rounded-md   px-10 py-6 ">
@@ -181,7 +181,11 @@ export const Contact = () => {
           <div className="rounded-full h-12 w-12 flex flex-col justify-center items-center text-white bg-gradient-to-r from-purple-700 to-purple-950 hover:bg-gradient-to-r hover:from-purple-950 hover:to-purple-700 cursor-pointer">
             <FiPhoneCall className="w-6 h-6" />
           </div>
-          <div className="flex flex-col space-y-1 font-bold text-white">
+          <div
+            className={`flex flex-col space-y-1 font-bold  ${
+              mode ? "text-white" : "text-black"
+            }`}
+          >
             <p>Phone</p>
             <p>+250786170670</p>
           </div>
@@ -190,7 +194,11 @@ export const Contact = () => {
           <div className="rounded-full h-12 w-12 flex flex-col justify-center items-center text-white bg-gradient-to-r from-purple-700 to-purple-950 hover:bg-gradient-to-r hover:from-purple-950 hover:to-purple-700 cursor-pointer">
             <MdOutlineMailOutline className="w-6 h-6" />
           </div>
-          <div className="flex flex-col space-y-1 font-bold text-white">
+          <div
+            className={`flex flex-col space-y-1 font-bold  ${
+              mode ? "text-white" : "text-black"
+            }`}
+          >
             <p>Email</p>
             <p>nyiranezalouise93@gmail.com</p>
           </div>
@@ -199,7 +207,11 @@ export const Contact = () => {
           <div className="rounded-full h-12 w-12 flex flex-col justify-center items-center text-white bg-gradient-to-r from-purple-700 to-purple-950 hover:bg-gradient-to-r hover:from-purple-950 hover:to-purple-700 cursor-pointer">
             <CiLocationOn className="w-6 h-6" />
           </div>
-          <div className="flex flex-col space-y-1 font-bold text-white">
+          <div
+            className={`flex flex-col space-y-1  font-bold  ${
+              mode ? "text-white" : "text-black"
+            }`}
+          >
             <p>Location</p>
             <p>Kimironko kg 15/ kigali/Gasabo</p>
           </div>
